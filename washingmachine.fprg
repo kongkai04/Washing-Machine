@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kongk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2566-07-19 04:31:52 PM"/>
+        <attribute name="created" value="a29uZ2s7SVRTTUVLT05HS0FJOzI1NjYtMDctMTc7MDg6NTY6MTcgUE07Mjc0NQ=="/>
+        <attribute name="edited" value="a29uZ2s7SVRTTUVLT05HS0FJOzI1NjYtMDctMTk7MDQ6MzE6NTIgUE07MzsyODQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="coin" type="Integer" array="False" size=""/>
+            <declare name="countdown, time" type="Real" array="False" size=""/>
+            <declare name="sendNoti, line" type="String" array="False" size=""/>
+            <if expression="Coin = 0">
+                <then>
+                    <input variable="coin"/>
+                    <output expression="&quot;use coin to start&quot;" newline="True"/>
+                    <assign variable="time" expression="Countdown60min"/>
+                    <if expression="min &lt;= 1">
+                        <then>
+                            <assign variable="sendNoti" expression="line"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
